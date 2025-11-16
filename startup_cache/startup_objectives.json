@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Choose name",
+    "description": "select BOY, choose your name and confirm to proceed",
+    "type": "menu_navigation",
+    "target_entity": null,
+    "target_level": null,
+    "status": "[X]"
+  },
+  {
+    "name": "Exit truck",
+    "description": "exit the truck and enter the house",
+    "type": "world_navigation",
+    "target_entity": "exit_truck",
+    "target_level": null,
+    "status": "[ ]"
+  },
+  {
+    "name": "Fix clock",
+    "description": "Go upstairs and set the clock, then return to the living room",
+    "type": "world_navigation",
+    "target_entity": null,
+    "target_level": null,
+    "status": "[ ]"
+  },
+  {
+    "name": "Go to Prof. Birch's House",
+    "description": "Exit the house and go to Prof. Birch's house",
+    "type": "world_navigation",
+    "target_entity": "prof_birch_house",
+    "target_level": null,
+    "status": "[ ]"
+  },
+  {
+    "name": "Go to Route 110",
+    "description": "Exit the house and go to Prof. Birch's house",
+    "type": "world_navigation",
+    "target_entity": "leave_littleroot",
+    "target_level": null,
+    "status": "[ ]"
+  },
+  {
+    "name": "Pick a starter Pokemon",
+    "description": "Go to the bag and pick a starter Pokemon",
+    "type": "world_navigation",
+    "target_entity": "prof_birch_bag",
+    "target_level": null,
+    "status": "[ ]"
+  },
+  {
+    "name": "Exit and visit May",
+    "description": "Find may on route 103",
+    "type": "world_navigation",
+    "target_entity": "route_103",
+    "target_level": null,
+    "status": "[ ]"
+  },
+  {
+    "name": "Return to the lab",
+    "description": "Follow May back to Prof. Birch's lab",
+    "type": "world_navigation",
+    "target_entity": "prof_birch_lab",
+    "target_level": null,
+    "status": "[ ]"
+  },
+  {
+    "name": "LVL_UP",
+    "description": "Level up your Pokemon to level 10",
+    "type": "level_grinding",
+    "target_entity": "grass",
+    "target_level": 10,
+    "status": "[ ]"
+  },
+  {
+    "name": "Get to Rustboro City",
+    "description": "Navigate and fight and catch Pokemon to reach Rustboro City",
+    "type": "world_navigation",
+    "target_entity": "world_navigation",
+    "target_level": null,
+    "status": "[ ]"
+  }
+]

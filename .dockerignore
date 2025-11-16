@@ -1,0 +1,35 @@
+# VCS metadata
+.git
+.gitignore
+
+# Development configs
+.vscode
+.idea
+
+# Bytecode / caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.env
+.venv
+env/
+venv/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs & misc
+*.log
+*.mp4
+
+# Docker / compose files not needed at runtime
+Dockerfile
+docker-compose.yaml
+v1-Dockerfile
+v3-Dockerfile-with-ocr

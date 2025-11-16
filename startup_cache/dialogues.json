@@ -1,0 +1,825 @@
+[
+  {
+    "timestamp": 1763018023.8703325,
+    "step_number": 7,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 0,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR"
+  },
+  {
+    "timestamp": 1763018025.2624402,
+    "step_number": 8,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763018584.4092643,
+    "step_number": 12,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 0,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | DIALOGUE_EXTRACTION_ERROR"
+  },
+  {
+    "timestamp": 1763018585.787336,
+    "step_number": 13,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763018590.5464525,
+    "step_number": 14,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR"
+  },
+  {
+    "timestamp": 1763018591.9420881,
+    "step_number": 15,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 2,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763018786.6822138,
+    "step_number": 9,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 0,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | DIALOGUE_EXTRACTION_ERROR | Welcome to the"
+  },
+  {
+    "timestamp": 1763019046.1044095,
+    "step_number": 9,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 0,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | DIALOGUE_EXTRACTION_ERROR | Welcome to the | Hi!"
+  },
+  {
+    "timestamp": 1763019047.409704,
+    "step_number": 10,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019054.0048456,
+    "step_number": 11,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | Welcome to the"
+  },
+  {
+    "timestamp": 1763019055.2709136,
+    "step_number": 12,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 2,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019071.401341,
+    "step_number": 15,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 2,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "This is what we"
+  },
+  {
+    "timestamp": 1763019077.076494,
+    "step_number": 17,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 3,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019144.9465685,
+    "step_number": 30,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 3,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "And you are?"
+  },
+  {
+    "timestamp": 1763019149.7603085,
+    "step_number": 31,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 4,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019155.6973858,
+    "step_number": 32,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 4,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "All right"
+  },
+  {
+    "timestamp": 1763019157.1167047,
+    "step_number": 33,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 5,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019282.8526921,
+    "step_number": 11,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 0,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | DIALOGUE_EXTRACTION_ERROR | Welcome to the | Hi! | Hi! S"
+  },
+  {
+    "timestamp": 1763019284.340953,
+    "step_number": 12,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019302.3221467,
+    "step_number": 16,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | Welcome to the | This is what w"
+  },
+  {
+    "timestamp": 1763019303.738165,
+    "step_number": 17,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 2,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019309.609205,
+    "step_number": 18,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 2,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "This is what we | This world is w"
+  },
+  {
+    "timestamp": 1763019310.8744438,
+    "step_number": 19,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 3,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019316.1451852,
+    "step_number": 20,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 3,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "And you are? | We humans liv"
+  },
+  {
+    "timestamp": 1763019317.4355483,
+    "step_number": 21,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 4,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019334.4317653,
+    "step_number": 25,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 4,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "All right | But despite o"
+  },
+  {
+    "timestamp": 1763019335.8352408,
+    "step_number": 26,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 5,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019358.8970828,
+    "step_number": 32,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 5,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "And you are?"
+  },
+  {
+    "timestamp": 1763019364.4608188,
+    "step_number": 36,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 6,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019369.7867181,
+    "step_number": 37,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 6,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "All right"
+  },
+  {
+    "timestamp": 1763019371.192187,
+    "step_number": 38,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 7,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019409.2185686,
+    "step_number": 47,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 7,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "So it"
+  },
+  {
+    "timestamp": 1763019414.7709618,
+    "step_number": 51,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 8,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019696.281629,
+    "step_number": 11,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 0,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | DIALOGUE_EXTRACTION_ERROR | Welcome to the | Hi! | Hi! S | This is what"
+  },
+  {
+    "timestamp": 1763019697.660543,
+    "step_number": 12,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019701.6436236,
+    "step_number": 13,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | Welcome to the | This is what w | This world is w"
+  },
+  {
+    "timestamp": 1763019703.0533144,
+    "step_number": 14,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 2,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019756.3029077,
+    "step_number": 27,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 2,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "This is what we | This world is w | And you are?"
+  },
+  {
+    "timestamp": 1763019761.8260667,
+    "step_number": 31,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 3,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019767.951434,
+    "step_number": 32,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 3,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "And you are? | We humans liv | All right.\nWhat'"
+  },
+  {
+    "timestamp": 1763019769.360956,
+    "step_number": 33,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 4,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019793.244064,
+    "step_number": 38,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 4,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "All right | But despite o | So it"
+  },
+  {
+    "timestamp": 1763019794.658459,
+    "step_number": 39,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 5,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763019801.706771,
+    "step_number": 40,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 5,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "And you are? | NO_DIALOGUE"
+  },
+  {
+    "timestamp": 1763019803.1141772,
+    "step_number": 41,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 6,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  },
+  {
+    "timestamp": 1763020311.5588906,
+    "step_number": 37,
+    "event": "dialogue_start",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 0,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null,
+    "dialogue_text": "DIALOGUE_EXTRACTION_ERROR | DIALOGUE_EXTRACTION_ERROR | Welcome to the | Hi! | Hi! S | This is what | This is w"
+  },
+  {
+    "timestamp": 1763020313.0093114,
+    "step_number": 38,
+    "event": "dialogue_end",
+    "player_position": {
+      "x": 0,
+      "y": 0
+    },
+    "player_map": "TITLE_SEQUENCE",
+    "dialogue_count": 1,
+    "npc_tile_position": {
+      "x": 0,
+      "y": 0
+    },
+    "active_tile_filename": "TITLE_SEQUENCE_0_0.png",
+    "active_tile_class": null
+  }
+]

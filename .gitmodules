@@ -1,0 +1,3 @@
+[submodule "uniqueembeddings"]
+	path = uniqueembeddings
+	url = https://github.com/pokeagentbowl/uniqueembeddings.git

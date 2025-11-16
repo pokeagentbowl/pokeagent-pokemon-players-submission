@@ -1,0 +1,5 @@
+.github/** merge=ours
+.devcontainer/** merge=ours
+AGENTS.md merge=ours
+CLAUDE.md merge=ours
+CODE_EXECUTION.md merge=ours

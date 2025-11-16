@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PokeAgent - Interactive Stream</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        
+        html, body {
+            font-family: 'VT323', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #33ff33;
+            overflow: hidden;
+            letter-spacing: 1px;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .header {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #ff6177;
+            font-size: 24px;
+            text-shadow: 0 0 5px #ff6177;
+        }
+        
+        .status-indicator {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #ff6177;
+            box-shadow: 0 0 10px #ff6177;
+        }
+        
+        .status-indicator.connected {
+            background-color: #33ff33;
+            box-shadow: 0 0 10px #33ff33;
+        }
+        
+        .layout-toggle {
+            position: absolute;
+            top: 10px;
+            right: 50px;
+            background-color: #1a1a1a;
+            border: 1px solid #33ff33;
+            color: #33ff33;
+            padding: 5px 15px;
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            cursor: pointer;
+            text-shadow: 0 0 5px #33ff33;
+        }
+        
+        .layout-toggle:hover {
+            background-color: #33ff33;
+            color: #0a0a0a;
+            box-shadow: 0 0 10px #33ff33;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1500px;
+        }
+        
+        .content.vertical-layout {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .top-row {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .content.vertical-layout .top-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .screenshot-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .screenshot-container {
+            width: 720px;
+            height: 480px;
+            background-color: #000000;
+            border: 2px solid #33ff33;
+            box-shadow: 0 0 10px #33ff33;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .screenshot {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            image-rendering: pixelated;
+        }
+        
+        .controls-info {
+            margin-top: 10px;
+            color: #33ff33;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .map-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .map-title {
+            color: #ff6177;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff6177;
+            font-size: 18px;
+        }
+        
+        .map-container {
+            background-color: #1a1a1a;
+            border: 2px solid #33ff33;
+            padding: 15px;
+            width: 720px;
+            max-height: 400px;
+            overflow: auto;
+        }
+        
+        .map-visualization {
+            font-family: 'VT323', monospace;
+            font-size: 20px;
+            white-space: pre;
+            color: #33ff33;
+            line-height: 1.2;
+        }
+        
+        .action-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1460px;
+        }
+        
+        .content.vertical-layout .action-panel {
+            width: 720px;
+        }
+        
+        .action-section {
+            background-color: #1a1a1a;
+            border: 2px solid #33ff33;
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .content.vertical-layout .action-section {
+            width: 720px;
+        }
+        
+        .section-title {
+            color: #ff6177;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff6177;
+            font-size: 18px;
+        }
+        
+        .action-queue {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            min-height: 60px;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+        
+        .action-button {
+            background-color: #0a0a0a;
+            border: 1px solid #33ff33;
+            color: #33ff33;
+            padding: 5px 10px;
+            font-family: 'VT323', monospace;
+            font-size: 14px;
+            border-radius: 0;
+        }
+        
+        .action-button.newest {
+            border-color: #ff6177;
+            box-shadow: 0 0 10px #ff6177;
+        }
+        
+        /* .key-status {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(26, 26, 26, 0.9);
+            padding: 10px 20px;
+            border: 1px solid #33ff33;
+            border-radius: 5px;
+            color: #33ff33;
+            font-size: 14px;
+        }
+        
+        .key-status.active {
+            background-color: rgba(255, 97, 119, 0.3);
+            border-color: #ff6177;
+            box-shadow: 0 0 10px #ff6177;
+        } */
+    </style>
+</head>
+<body>
+    <div class="header">PokeAgent Simple Stream</div>
+    <div class="status-indicator" id="status-indicator"></div>
+    <button class="layout-toggle" id="layout-toggle" onclick="toggleLayout()">TOGGLE LAYOUT</button>
+    
+    <div class="content" id="content">
+        <div class="top-row">
+            <div class="screenshot-panel">
+                <div class="screenshot-container" tabindex="0" id="game-container">
+                    <img id="screenshot" class="screenshot" src="" alt="Game Screenshot">
+                    <!-- <div class="key-status" id="key-status">No key pressed</div> -->
+                </div>
+                <div class="controls-info">
+                    Controls: Arrow Keys / WASD = Move | Z = A | X = B | Enter = Start | Backspace = Select<br>
+                    Hold keys to repeat button presses
+                </div>
+            </div>
+            
+            <div class="map-panel">
+                <div class="map-title">Visual Map</div>
+                <div class="map-container">
+                    <div id="map-visualization" class="map-visualization">LOADING MAP...</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="action-panel">
+            <div class="action-section">
+                <div class="section-title"># ACTION_QUEUE</div>
+                <div id="action-queue" class="action-queue">
+                    <!-- Recent button presses will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Layout toggle function
+        function toggleLayout() {
+            const content = document.getElementById('content');
+            content.classList.toggle('vertical-layout');
+            
+            // Save preference to localStorage
+            const isVertical = content.classList.contains('vertical-layout');
+            localStorage.setItem('layoutPreference', isVertical ? 'vertical' : 'horizontal');
+        }
+        
+        // Load layout preference on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const preference = localStorage.getItem('layoutPreference');
+            if (preference === 'vertical') {
+                document.getElementById('content').classList.add('vertical-layout');
+            }
+        });
+        
+        // Server connection
+        const serverUrl = `http://${window.location.hostname}:${window.location.port || '8000'}`;
+        let isConnected = false;
+        
+        // Keyboard state tracking
+        const keyToButton = {
+            'ArrowUp': 'UP',
+            'ArrowDown': 'DOWN',
+            'ArrowLeft': 'LEFT',
+            'ArrowRight': 'RIGHT',
+            'w': 'UP',
+            'W': 'UP',
+            's': 'DOWN',
+            'S': 'DOWN',
+            'a': 'LEFT',
+            'A': 'LEFT',
+            'd': 'RIGHT',
+            'D': 'RIGHT',
+            'z': 'A',
+            'Z': 'A',
+            'x': 'B',
+            'X': 'B',
+            'Enter': 'START',
+            'Backspace': 'SELECT'
+        };
+        
+        // Track which keys are currently pressed
+        const pressedKeys = new Set();
+        // Track interval timers for each key
+        const keyIntervals = new Map();
+        // Delay between repeated button presses. 
+        // Note server holds buttons for 12 frames 
+        // so this is the approx time between button presses.
+        const REPEAT_DELAY = 300; // ms
+        
+        // Focus the game container on load
+        document.getElementById('game-container').focus();
+        
+        // Keyboard event handlers
+        document.getElementById('game-container').addEventListener('keydown', (e) => {
+            const key = e.key;
+            
+            // Check if this is a mapped key and not already pressed
+            if (keyToButton[key] && !pressedKeys.has(key)) {
+                e.preventDefault(); // Prevent default browser behavior
+                pressedKeys.add(key);
+                const button = keyToButton[key];
+                
+                // Send the first button press immediately
+                sendAction([button]);
+                
+                // Set up interval to repeatedly send button press while key is held
+                const intervalId = setInterval(() => {
+                    sendAction([button]);
+                }, REPEAT_DELAY);
+                
+                // Store the interval ID so we can clear it on keyup
+                keyIntervals.set(key, intervalId);
+            }
+        });
+        
+        document.getElementById('game-container').addEventListener('keyup', (e) => {
+            const key = e.key;
+            if (keyToButton[key]) {
+                // Clear the interval for this key
+                const intervalId = keyIntervals.get(key);
+                if (intervalId) {
+                    clearInterval(intervalId);
+                    keyIntervals.delete(key);
+                }
+                // Remove from pressed keys
+                pressedKeys.delete(key);
+            }
+        });
+        
+        // Prevent losing focus
+        document.getElementById('game-container').addEventListener('blur', () => {
+            setTimeout(() => {
+                document.getElementById('game-container').focus();
+            }, 0);
+        });
+        
+        async function sendAction(buttons) {
+            // buttons is an array
+            try {
+                const response = await fetch(`${serverUrl}/action`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ buttons: buttons })
+                });
+                
+                if (response.ok) {
+                    console.log(`Buttons sent: [${buttons.join(', ')}]`);
+                } else {
+                    console.error(`Failed to send buttons [${buttons.join(', ')}], status: ${response.status}`);
+                }
+            } catch (error) {
+                console.error(`Error sending buttons [${buttons.join(', ')}]:`, error);
+            }
+        }
+        
+        // Monitor frame_stream connection status
+        const screenshotImg = document.getElementById('screenshot');
+        
+        // Set connection status to connected when image loads
+        screenshotImg.addEventListener('load', () => {
+            if (!isConnected) {
+                isConnected = true;
+                document.getElementById('status-indicator').classList.add('connected');
+                console.log('Frame stream connected');
+            }
+        });
+        
+        // Set connection status to disconnected on error
+        screenshotImg.addEventListener('error', () => {
+            if (isConnected) {
+                isConnected = false;
+                document.getElementById('status-indicator').classList.remove('connected');
+                console.log('Frame stream disconnected');
+            }
+        });
+        
+        // Map visualization polling
+        async function updateMapVisualization() {
+            try {
+                const response = await fetch(`${serverUrl}/state`);
+                if (response.ok) {
+                    const data = await response.json();
+                    
+                    const mapContainer = document.getElementById('map-visualization');
+                    
+                    if (data.map && data.map.visual_map) {
+                        // Filter out rows that only contain numbers, minus, space, #, and N
+                        let lines = data.map.visual_map.split('\n');
+                        lines = lines.filter(line => {
+                            const cleanLine = line.trim();
+                            if (cleanLine === '') return false;
+                            
+                            // Skip coordinate rows that only contain: numbers, minus, space, #, and N
+                            const isCoordinateRow = /^[\d\-\s#N]+$/.test(cleanLine);
+                            return !isCoordinateRow;
+                        });
+                        
+                        if (lines.length > 0) {
+                            mapContainer.textContent = lines.join('\n');
+                        } else {
+                            mapContainer.textContent = 'NO_MAP_DATA';
+                        }
+                    } else {
+                        mapContainer.textContent = 'NO_MAP_DATA';
+                    }
+                }
+            } catch (error) {
+                console.error('Map update error:', error);
+            }
+        }
+        
+        // Function to fetch and update recent actions
+        let lastButtonCount = 0;
+        let lastButtonData = '';
+        
+        async function updateRecentActions() {
+            try {
+                const response = await fetch(`${serverUrl}/recent_actions`);
+                const data = await response.json();
+                
+                const actionQueue = document.getElementById('action-queue');
+                
+                // Get up to last 30 button presses (or fewer if less available)
+                const recentButtons = data.recent_buttons.slice(-30);
+                
+                // Create a signature of current buttons for change detection
+                const currentSignature = recentButtons.map(b => `${b.button}:${b.timestamp}`).join('|');
+                
+                // Only update if there are changes
+                if (currentSignature === lastButtonData && recentButtons.length === lastButtonCount) {
+                    return; // No changes, don't update
+                }
+                
+                lastButtonData = currentSignature;
+                lastButtonCount = recentButtons.length;
+                
+                actionQueue.innerHTML = ''; // Clear existing buttons
+                
+                // Only show actual buttons (no empty slots)
+                if (recentButtons.length === 0) {
+                    const emptyMessage = document.createElement('div');
+                    emptyMessage.style.color = '#666';
+                    emptyMessage.style.fontStyle = 'italic';
+                    emptyMessage.textContent = 'NO_RECENT_ACTIONS';
+                    actionQueue.appendChild(emptyMessage);
+                    return;
+                }
+                
+                recentButtons.forEach((buttonData, index) => {
+                    const button = document.createElement('div');
+                    button.className = 'action-button';
+                    button.textContent = buttonData.button;
+                    
+                    // Calculate age-based opacity (newer = more opaque)
+                    const age = recentButtons.length - index - 1; // 0 = newest
+                    const maxAge = Math.min(recentButtons.length - 1, 29); // Handle fewer than 30 buttons
+                    const opacity = maxAge > 0 ? Math.max(0.3, 1.0 - (age / maxAge) * 0.7) : 1.0;
+                    button.style.opacity = opacity;
+                    
+                    // Highlight the most recent button
+                    if (index === recentButtons.length - 1) {
+                        button.classList.add('newest');
+                    }
+                    
+                    actionQueue.appendChild(button);
+                });
+                
+            } catch (error) {
+                console.error('Error fetching recent actions:', error);
+            }
+        }
+        
+        // Start polling for map and actions only (frame_stream handles video)
+        setInterval(updateMapVisualization, 2000);
+        setInterval(updateRecentActions, 2000);
+        
+        // Initial updates
+        updateMapVisualization();
+        updateRecentActions();
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+name: pokeagent-v3-1-instance-${INSTANCE_NUMBER:-0}
+
+services:
+  server:
+    build: .
+    container_name: pokeagent-v3.1-server-${INSTANCE_NUMBER:-0}
+    command: ["uv", "run", "python3", "-u", "run_server.py", "--port", "${HOST_PORT:-8000}"]
+    env_file:
+      - .env
+    ports:
+      - "${HOST_PORT:-8000}:${HOST_PORT:-8000}"
+    volumes:
+      - .:/app
+      - ./Emerald-GBAdvance:/app/Emerald-GBAdvance
+    restart: on-failure
+    stop_grace_period: 15s  # Give it time to finalize video
+    stop_signal: SIGTERM  # Send SIGTERM for graceful shutdown
+
+  agent:
+    build: .
+    container_name: pokeagent-v3.1-agent-${INSTANCE_NUMBER:-0}
+    command:
+      - sh
+      - -c
+      - "sleep 5 && uv run python3 -u run_agent.py --server-host server --port ${HOST_PORT:-8000}"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - ./Emerald-GBAdvance:/app/Emerald-GBAdvance
+    depends_on:
+      - server
+    restart: on-failure

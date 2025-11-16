@@ -1,0 +1,23 @@
+{
+  "exit_truck": [
+    ["L", 6, 2]
+  ],
+  "mom_initial": [
+    ["LITTLEROOT TOWN", 5, 10]
+  ],
+  "clock": [
+    ["LITTLEROOT TOWN BRENDANS HOUSE 2F", 5, 1]
+  ],
+  "leave_littleroot": [
+    ["LITTLEROOT TOWN", 17, -8]
+  ],
+  "prof_birch_house": [
+    ["LITTLEROOT TOWN", 23, -4]
+  ],
+  "prof_birch_lab": [
+    ["LITTLEROOT TOWN", 9, 12]
+  ],
+  "prof_birch_bag": [
+    ["LITTLEROOT TOWN", 9, -22]
+  ]
+}

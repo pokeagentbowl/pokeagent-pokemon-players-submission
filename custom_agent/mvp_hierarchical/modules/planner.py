@@ -146,7 +146,7 @@ After healing, you are prepared to continue north on Route 103 to find and battl
 ### **Part 5: Rival Battle and Return to Littleroot**
 
 1.  **Battle May**: Once your Mudkip is at least Level 7, walk north on Route 103 to find May. Talk to her to initiate your first rival battle.
-    *   **Rival Battle**: May has a Level 5 **Treecko**. Use your **Tackle** attack to defeat it.
+    *   **Rival Battle**: Use your **Tackle** attack to defeat May.
 2.  **Return to the Lab**: After the battle, you and May will automatically return to Professor Birch's lab in Littleroot Town.
 3.  **Receive the Pokédex**: As a reward for your victory, Professor Birch will give you a **Pokédex**, a device for recording data on Pokémon you've seen and caught. He will also give you **5 Poké Balls**.
 4.  **Get the Running Shoes**: Exit the lab. As you walk out of town, your Mom will stop you and give you the **RUNNING SHOES**.
@@ -154,10 +154,6 @@ After healing, you are prepared to continue north on Route 103 to find and battl
 ### **Part 6: Journey to Petalburg City**
 
 1.  **Route 102 Trainers**: Head west from Oldale Town onto **Route 102**. You will encounter several trainers. You must battle them to proceed and gain experience.
-    *   **Youngster Calvin**: He has a Level 5 **Zigzagoon**.
-    *   **Bug Catcher Rick**: He has two Level 4 **Wurmples**. Your Mudkip will likely reach Level 8 after this battle.
-    *   **Youngster Allen**: He has a Level 5 **Zigzagoon**.
-    *   **Lass Tiana**: She has a Level 5 **Zigzagoon**.
 2.  **Arrive in Petalburg City**: Continue heading west to enter **Petalburg City**.
 
 ### **Part 7: Petalburg City and Wally's Tutorial**
